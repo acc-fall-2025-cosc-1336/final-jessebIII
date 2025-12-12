@@ -9,5 +9,10 @@ def create_multiplication_table():
     return table
 
 
+def print_table(table):
+    for row in table:
+        print(' '.join(f'{num:>2}' for num in row))
+
+
 def test_config():
     return True
