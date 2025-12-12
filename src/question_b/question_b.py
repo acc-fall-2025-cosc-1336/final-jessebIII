@@ -32,8 +32,6 @@ def display_stock_purchase_history(stocks):
 def main():
     continue_program = True
     while continue_program:
-        stock_list = get_stock_list()
-        
         print("\n--- Menu ---")
         print("1 - Display stock purchase history")
         print("2 - Exit")
@@ -41,6 +39,7 @@ def main():
         user_choice = input("Enter your choice (1 or 2): ").strip()
         
         if user_choice == '1':
+            stock_list = get_stock_list()
             display_stock_purchase_history(stock_list)
         elif user_choice == '2':
             continue_program = False
