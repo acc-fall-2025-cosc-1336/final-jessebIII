@@ -1,5 +1,5 @@
 #add import
-yesfrom question_a import create_multiplication_table, display_multiplication_table
+from question_a import create_multiplication_table, display_multiplication_table
 
 continue_program = True
 while continue_program:
